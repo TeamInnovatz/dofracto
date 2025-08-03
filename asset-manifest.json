@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dofracto/static/css/main.52903d5a.css",
+    "main.js": "/dofracto/static/js/main.c5ec7d1e.js",
+    "static/js/453.a3c1d153.chunk.js": "/dofracto/static/js/453.a3c1d153.chunk.js",
+    "static/media/animation.mp4": "/dofracto/static/media/animation.80989344b2fd4e42a75f.mp4",
+    "static/media/cube.png": "/dofracto/static/media/cube.ccb85304766dcb23fcc9.png",
+    "static/media/logo.png": "/dofracto/static/media/logo.69a1d77b1d820d926746.png",
+    "static/media/login.png": "/dofracto/static/media/login.9617d5ebcddac9c8bee1.png",
+    "static/media/kadalai1.png": "/dofracto/static/media/kadalai1.bc6064de2f464947f28a.png",
+    "static/media/kadalai3.png": "/dofracto/static/media/kadalai3.f358f215f19701f4438d.png",
+    "static/media/kadalai4.png": "/dofracto/static/media/kadalai4.63b107acfefee72806c9.png",
+    "static/media/kadalai2.png": "/dofracto/static/media/kadalai2.0fc268d5c87d79485e68.png",
+    "index.html": "/dofracto/index.html",
+    "main.52903d5a.css.map": "/dofracto/static/css/main.52903d5a.css.map",
+    "main.c5ec7d1e.js.map": "/dofracto/static/js/main.c5ec7d1e.js.map",
+    "453.a3c1d153.chunk.js.map": "/dofracto/static/js/453.a3c1d153.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52903d5a.css",
+    "static/js/main.c5ec7d1e.js"
+  ]
+}
