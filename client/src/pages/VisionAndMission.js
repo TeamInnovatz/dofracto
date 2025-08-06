@@ -8,7 +8,6 @@ function VisionAndMission() {
   const timeoutRef = useRef(null);
 
   useEffect(() => {
-    // initial auto-slide after 3.5s
     timeoutRef.current = setTimeout(() => {
       setAnimationClass('slide-up');
       setScreen('second');
@@ -32,13 +31,11 @@ function VisionAndMission() {
     const half = window.innerWidth / 2;
 
     if (clickX < half && screen === 'second') {
-      // Clicked on left half to go to first screen
       clearTimeout(timeoutRef.current);
       setAnimationClass('slide-down');
       setScreen('first');
-      autoAdvanceToSecond(); // schedule auto-slide up again
+      autoAdvanceToSecond(); 
     } else if (clickX >= half && screen === 'first') {
-      // Clicked on right half to go to second screen
       clearTimeout(timeoutRef.current);
       setAnimationClass('slide-up');
       setScreen('second');
