@@ -25,32 +25,32 @@ const Listings = () => {
       </p>
       <div className="listings-main-grid">
         <div className="grid-left-col">
-          <div className="card card-food">
+          <div className="listing-card listing-card-food">
             <div className="icon-circle">
               <img src={foodImg} alt="Food Icon" className="icon-img" />
             </div>
-            <span className="card-text">Food &amp; Beverages</span>
+            <span className="listing-card-text">Food &amp; Beverages</span>
           </div>
         </div>
         <div className="grid-right-col">
-          <div className="card card-pharma">
+          <div className="listing-card listing-card-pharma">
             <div className="icon-circle">
               <img src={pharmaImg} alt="Pharma Icon" className="icon-img" />
             </div>
-            <span className="card-text">Pharmaceuticals</span>
+            <span className="listing-card-text">Pharmaceuticals</span>
           </div>
           <div className="right-bottom-row">
-            <div className="card card-it">
+            <div className="listing-card listing-card-it">
               <div className="icon-circle">
                 <img src={itImg} alt="IT Icon" className="icon-img" />
               </div>
-              <span className="card-text">Information Technology</span>
+              <span className="listing-card-text">Information Technology</span>
             </div>
-            <div className="card card-others">
+            <div className="listing-card listing-card-others">
               <div className="icon-circle">
                 <img src={othersImg} alt="Others Icon" className="icon-img" />
               </div>
-              <span className="card-text">Others</span>
+              <span className="listing-card-text">Others</span>
             </div>
           </div>
         </div>

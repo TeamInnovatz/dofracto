@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Orbitron:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 
+.listings-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
 .listings-container {
   background: linear-gradient(180deg, #11131d 80%, #18192e 100%);
   min-height: 100vh;
@@ -38,13 +44,33 @@
   margin-bottom: 1rem;
 }
 
-.i-wrapper {
-  position: relative;
-  display: inline-block;
+.listings-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dotless-i {
   font-family: inherit;
+}
+
+.i-glow-container {
+  position: relative;
+  display: inline-block;
+}
+
+.neon-dot {
+  position: absolute;
+  left: -0.001em;
+  top: 0.17em;
+  width: 11.7px;
+  height: 11.5px;
+  background-color: #00ffe1;
+  border-radius: 50%;
+  box-shadow:
+    0 0 8px #00ffe1,
+    0 0 12px #00ffe180,
+    0 0 16px #00ffe140;
 }
 
 .listings-description {
@@ -94,7 +120,7 @@
   width: 100%;
 }
 
-.card {
+.listing-card {
   background: #191c28;
   border-radius: 34px;
   border: 2.5px solid #21242b;
@@ -108,17 +134,17 @@
   min-width: 0;
   position: relative;
   margin: 0;
-  animation: continuousGlow 4s ease-in-out infinite;
+  animation: listingContinuousGlow 4s ease-in-out infinite;
   animation-fill-mode: forwards;
 }
 
-.card:hover {
+.listing-card:hover {
   transform: none;
   box-shadow: 0 0 18px 0 #01fff455, 0 0 8px 1px #111;
   border: 2.5px solid #21242b;
 }
 
-@keyframes continuousGlow {
+@keyframes listingContinuousGlow {
   0%, 100% {
     box-shadow: 0 0 18px 0 #01fff455, 0 0 8px 1px #111;
     border-color: #21242b;
@@ -131,23 +157,23 @@
   }
 }
 
-.grid-left-col .card {
+.grid-left-col .listing-card {
   animation-delay: 0s;
 }
 
-.grid-right-col > .card {
+.grid-right-col > .listing-card {
   animation-delay: 1.3s;
 }
 
-.right-bottom-row > .card:nth-child(1) {
+.right-bottom-row > .listing-card:nth-child(1) {
   animation-delay: 2.6s;
 }
 
-.right-bottom-row > .card:nth-child(2) {
+.right-bottom-row > .listing-card:nth-child(2) {
   animation-delay: 3.9s;
 }
 
-.card-food {
+.listing-card-food {
   width: 300px;
   height: 320px;
   border: 2.5px solid #00ffe1;
@@ -155,15 +181,15 @@
   padding: 65px 0 0 0;
 }
 
-.card-pharma {
+.listing-card-pharma {
   width: 400px;
   height: 120px;
   border: 2.5px solid #fff2;
   padding: 25px 0 0 0;
 }
 
-.card-it,
-.card-others {
+.listing-card-it,
+.listing-card-others {
   width: 190px;
   height: 160px;
   border: 2.5px solid #fff2;
@@ -193,7 +219,7 @@
   box-shadow: 0 0 10px 3px #01fff4;
 }
 
-.card-text {
+.listing-card-text {
   color: #fff;
   font-family: 'Orbitron', 'Inter', Arial, sans-serif;
   font-size: 1.35rem;
@@ -208,14 +234,14 @@
   align-self: center;
 }
 
-.card-food .card-text {
+.listing-card-food .listing-card-text {
   font-size: 2.25rem;
   letter-spacing: 0.02em;
 }
 
-.card-pharma .card-text,
-.card-it .card-text,
-.card-others .card-text {
+.listing-card-pharma .listing-card-text,
+.listing-card-it .listing-card-text,
+.listing-card-others .listing-card-text {
   font-size: 1.35rem;
   letter-spacing: 0.02em;
 }
@@ -233,9 +259,9 @@
   .right-bottom-row {
     gap: 14px;
   }
-  .card-pharma,
-  .card-it,
-  .card-others {
+  .listing-card-pharma,
+  .listing-card-it,
+  .listing-card-others {
     min-width: 170px;
     width: 100%;
   }
@@ -250,21 +276,21 @@
   .grid-right-col {
     max-width: 96vw;
   }
-  .card-food {
+  .listing-card-food {
     width: 97vw;
     max-width: 300px;
     height: 240px;
     padding-top: 45px;
   }
-  .card-pharma,
-  .card-it,
-  .card-others {
+  .listing-card-pharma,
+  .listing-card-it,
+  .listing-card-others {
     width: 97vw;
     max-width: 300px;
     height: 100px;
     padding-top: 20px;
   }
-  .card-text {
+  .listing-card-text {
     margin-top: 10px;
     font-size: 1.05rem;
   }
@@ -281,7 +307,7 @@
 }
 
 @media (max-width: 500px) {
-  .card-text {
+  .listing-card-text {
     font-size: 0.9rem;
   }
   .icon-circle {
@@ -291,36 +317,5 @@
   .icon-img {
     width: 14px;
     height: 14px;
-  }
-}
-
-.i-glow-container {
-  position: relative;
-  display: inline-block;
-}
-
-.neon-dot {
-  position: absolute;
-  left: -0.001em;
-  top: 0.17em;
-  width: 11.7px;
-  height: 11.5px;
-  background-color: #00ffe1;
-  border-radius: 50%;
-  box-shadow:
-    0 0 8px #00ffe1,
-    0 0 12px #00ffe180,
-    0 0 16px #00ffe140;
-  
-}
-
-@keyframes glow {
-  0%, 100% {
-    transform: translateY(-2px);
-    opacity: 5;
-  }
-  50% {
-    transform: translateY(-4px);
-    opacity: 0.8;
   }
 }

@@ -88,17 +88,17 @@ function Control() {
       </div>
 
       <div className="stats-row">
-        <div className="card">
+        <div className="controlcard">
           <h4>Total Sales</h4>
           <p>₹250000</p>
           <span className="green">+11.01%</span>
         </div>
-        <div className="card">
+        <div className="controlcard">
           <h4>Order Processed</h4>
           <p>₹3000</p>
           <span className="green">+7.01%</span>
         </div>
-        <div className="card expenses">
+        <div className="controlcard expenses">
           <h4>Total Expenses</h4>
           <p>₹170000</p>
           <span className="red">-5.01%</span>
@@ -119,7 +119,7 @@ function Control() {
           >
             <select
               className="sample-dropdown"
-              style={{ color: '#000', fontWeight: 'bold', fontSize: '14px', padding: '6px' }}
+              style={{ fontWeight: 'bold', fontSize: '14px', padding: '6px' }}
               defaultValue=""
             >
               <option value="" disabled>Items Tracker</option>

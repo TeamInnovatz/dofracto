@@ -29,7 +29,7 @@ const features = [
 ];
 
 const NumberBadge = ({ number }) => (
-  <div className="circular-badge">
+  <div className="featurex-circular-badge">
     <span>{number}</span>
   </div>
 );
@@ -45,30 +45,30 @@ export default function FeaturesPage1() {
   }, []);
 
   return (
-    <div className="features-wrapper">
-      <div className="features-header">
-        <h2 className="features-heading">Our Features</h2>
-        <p className="features-text">
+    <div className="featurex-wrapper">
+      <div className="featurex-header">
+        <h2 className="featurex-heading">Our Features</h2>
+        <p className="featurex-text">
           At Dofracto, you can explore and invest in businesses across various industries, tailored to your interests. Track your investment performance with real-time insights, all while connecting with a community of entrepreneurs and investors. Our platform simplifies fractional ownership with easy onboarding, flexible options, and clear, concise data.
         </p>
       </div>
 
-      <div className="features-container">
+      <div className="featurex-container">
         {features.map((feature, index) => {
           const isActive = currentStage === index;
           const isVisible = isActive;
-          const badgeSide = feature.id % 2 === 0 ? "badge-right" : "badge-left";
+          const badgeSide = feature.id % 2 === 0 ? "featurex-badge-right" : "featurex-badge-left";
 
           return (
             <div
               key={feature.id}
-              className={`feature-card ${isVisible ? "visible active" : "hidden"}`}
+              className={`featurex-card ${isVisible ? "featurex-visible featurex-active" : "featurex-hidden"}`}
             >
-              <div className="angled-box">
-                <div className={`badge-wrapper ${badgeSide}`}>
+              <div className="featurex-angled-box">
+                <div className={`featurex-badge-wrapper ${badgeSide}`}>
                   <NumberBadge number={feature.id} />
                 </div>
-                <div className="feature-content">
+                <div className="featurex-content">
                   <h3>{feature.title}</h3>
                   <p>{feature.description}</p>
                 </div>
