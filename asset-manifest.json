@@ -1,24 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.ae29c0aa.css",
-    "main.js": "/static/js/main.e75adb29.js",
-    "static/js/453.a3c1d153.chunk.js": "/static/js/453.a3c1d153.chunk.js",
-    "static/media/animation.mp4": "/static/media/animation.80989344b2fd4e42a75f.mp4",
-    "static/media/cube.png": "/static/media/cube.ccb85304766dcb23fcc9.png",
-    "static/media/logo2.png": "/static/media/logo2.58fb48d817831993e473.png",
-    "static/media/logo.png": "/static/media/logo.69a1d77b1d820d926746.png",
-    "static/media/login.png": "/static/media/login.9617d5ebcddac9c8bee1.png",
-    "static/media/kadalai1.png": "/static/media/kadalai1.bc6064de2f464947f28a.png",
-    "static/media/kadalai3.png": "/static/media/kadalai3.f358f215f19701f4438d.png",
-    "static/media/kadalai4.png": "/static/media/kadalai4.63b107acfefee72806c9.png",
-    "static/media/kadalai2.png": "/static/media/kadalai2.0fc268d5c87d79485e68.png",
-    "index.html": "/index.html",
-    "main.ae29c0aa.css.map": "/static/css/main.ae29c0aa.css.map",
-    "main.e75adb29.js.map": "/static/js/main.e75adb29.js.map",
-    "453.a3c1d153.chunk.js.map": "/static/js/453.a3c1d153.chunk.js.map"
+    "main.css": "/dofracto/static/css/main.f05ac5f3.css",
+    "main.js": "/dofracto/static/js/main.880edb2b.js",
+    "static/media/animation.mp4": "/dofracto/static/media/animation.80989344b2fd4e42a75f.mp4",
+    "static/media/cube.png": "/dofracto/static/media/cube.ccb85304766dcb23fcc9.png",
+    "static/media/businesskadalai1.png": "/dofracto/static/media/businesskadalai1.78e0ade7a4fe538f0580.png",
+    "static/media/businesskadalai3.png": "/dofracto/static/media/businesskadalai3.7e15e567b5576fe1bdf0.png",
+    "static/media/logo2.png": "/dofracto/static/media/logo2.58fb48d817831993e473.png",
+    "static/media/it.jpeg": "/dofracto/static/media/it.5b5800356103f2f07a0a.jpeg",
+    "static/media/food.jpg": "/dofracto/static/media/food.f206e9966ce0ae02bc57.jpg",
+    "static/media/businesskadalai2.png": "/dofracto/static/media/businesskadalai2.c878e8873cfff2f2605f.png",
+    "static/media/logo.png": "/dofracto/static/media/logo.69a1d77b1d820d926746.png",
+    "static/media/login.png": "/dofracto/static/media/login.9617d5ebcddac9c8bee1.png",
+    "static/media/kadalai1.png": "/dofracto/static/media/kadalai1.bc6064de2f464947f28a.png",
+    "static/media/image.png": "/dofracto/static/media/image.fa4f177cd02f16e6d915.png",
+    "static/media/others.jpeg": "/dofracto/static/media/others.0224e393c148124ea3c7.jpeg",
+    "static/media/kadalai3.png": "/dofracto/static/media/kadalai3.f358f215f19701f4438d.png",
+    "static/media/kadalai4.png": "/dofracto/static/media/kadalai4.63b107acfefee72806c9.png",
+    "static/media/kadalai2.png": "/dofracto/static/media/kadalai2.0fc268d5c87d79485e68.png",
+    "index.html": "/dofracto/index.html",
+    "main.f05ac5f3.css.map": "/dofracto/static/css/main.f05ac5f3.css.map",
+    "main.880edb2b.js.map": "/dofracto/static/js/main.880edb2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae29c0aa.css",
-    "static/js/main.e75adb29.js"
+    "static/css/main.f05ac5f3.css",
+    "static/js/main.880edb2b.js"
   ]
 }
