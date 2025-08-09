@@ -164,23 +164,23 @@ background: #657d6cff;
   background: #1b1919;
   color: #fff;
   text-align: left;
-  padding: 5rem 1.5rem 5rem 1.5rem; /* Increase/decrease padding for more/less space */
+  padding: 5rem 1.5rem 5rem 1.5rem;
 }
 
 .huse-section-dark h3 {
-  font-size: 3rem;      /* Increase for a larger heading */
-  font-weight: 400;       /* Make bolder if needed */
+  font-size: 3rem;      
+  font-weight: 400;       
   margin-left: 5rem;
   line-height: 4rem;
-  margin-bottom: 4rem;    /* Add more space below the heading */
+  margin-bottom: 4rem;    
 }
 
 .huse-section-dark h2 {
   font-size: 2.45rem;
-  font-weight: 400;      /* Increase for larger body text */
-  max-width: 70rem;       /* Adjust width for better readability */
+  font-weight: 400;      
+  max-width: 70rem;      
   margin-left: 5rem;
-  line-height: 1.3;       /* Adjust line spacing */
+  line-height: 1.3;    
 }
         .huse-diff-title {
           font-size: 3rem;
@@ -237,7 +237,7 @@ background: #657d6cff;
   -webkit-overflow-scrolling: touch;
   align-items: stretch;
   width: 100%;
-  max-width: 100vw;      /* Prevents overflow beyond viewport */
+  max-width: 100vw;      
   box-sizing: border-box;
   will-change: transform;
   transition : none;
@@ -245,20 +245,18 @@ background: #657d6cff;
   white-space: nowrap; 
 }
 
-/* Start completely hidden */
+
 .card-hidden {
   opacity: 0;
   transform: translateY(30px);
 }
 
-/* Fade in when active */
 .card-fade-in {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 0.5s forwards;
 }
 
-/* Smooth upward fade animation */
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -284,17 +282,17 @@ background: #657d6cff;
 
 
   .huse-diff-cards-scroll::-webkit-scrollbar {
-  display: none;                   /* Chrome, Safari, Opera */
+  display: none;                  
 }
 
 .huse-diff-cards-fixed-container {
   display: flex;
   flex-direction: row;
-  gap: 2rem;                  /* space between cards */
-  justify-content: center;    /* horizontally center cards */
-  align-items: flex-start;    /* align cards vertically at the top */
-  width: 100%;                /* or set a fixed max-width if needed */
-  overflow-x: hidden;         /* prevent horizontal overflow */
+  gap: 2rem;                  
+  justify-content: center;    
+  align-items: flex-start;   
+  width: 100%;                
+  overflow-x: hidden;       
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -347,7 +345,7 @@ flex-wrap: nowrap;
   background: #fff;
   color: #000;
   text-align: left;
-  padding: 3rem 1.5rem 3rem 1.5rem;     /* More vertical space */
+  padding: 3rem 1.5rem 3rem 1.5rem;     
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -355,7 +353,7 @@ flex-wrap: nowrap;
 }
 
 .huse-section-final h2 {
-  font-size: 3.15rem;                    /* Large, bold heading */
+  font-size: 3.15rem;    
   font-weight: 700;
   margin-left: 0rem;
   margin-bottom: 2.2rem;
@@ -363,7 +361,7 @@ flex-wrap: nowrap;
 }
 
 .huse-section-final p {
-  font-size: 2.25rem;                    /* Slightly larger body text */
+  font-size: 2.25rem; 
   font-weight:485;
   max-width: 80rem;
   margin-left: 5rem;
@@ -374,7 +372,7 @@ flex-wrap: nowrap;
   background: #fff;
   color: #000;
   font-weight: bold;
-  padding: 1.5rem 4rem;               /* Larger button */
+  padding: 1.5rem 4rem;      
   border-radius: 1.7rem;
   border: 6px solid #0e7385ff;
   font-size: 2.5rem;

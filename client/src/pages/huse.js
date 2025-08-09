@@ -58,11 +58,6 @@ const handleStartAnimation = () => {
   }
 }
 
-function easeInOutCubic(t) {
-  return t < 0.5
-    ? 4 * t * t * t
-    : 1 - Math.pow(-2 * t + 2, 3) / 2;
-}
 
 useEffect(() => {
     const interval = setInterval(() => {
@@ -85,7 +80,7 @@ useEffect(() => {
 
   if (sectionRef.current) observer.observe(sectionRef.current);
   return () => observer.disconnect();
-}, []);
+},[]);
 
 useEffect(() => {
   const container = scrollRef.current;
@@ -113,13 +108,11 @@ useEffect(() => {
       const progress = Math.min(elapsed / duration, 1);
       const eased = easeInOutCubic(progress);
 
-      // Scroll logic
       const scrollVal = direction === "forward"
         ? scrollDistance * eased
         : scrollDistance * (1 - eased);
       container.scrollLeft = scrollVal;
 
-      // Divider grows only during forward
       if (direction === "forward") {
         const widthVal = minWidth + (maxWidth - minWidth) * eased;
         divider.style.width = `${widthVal}px`;
@@ -154,7 +147,6 @@ useEffect(() => {
 
   return (
     <div className="huse-container">
-      {/* Hero Section */}
       <section className="huse-section">
         <h1 className="huse-hero-title">
           Welcome to HUSE Circle –<br /> A hub for future entrepreneurs.
@@ -165,7 +157,6 @@ useEffect(() => {
         <button className="firsthuse-btn">Join HUSE Circle</button>
       </section>
 
-      {/* Section 2 - Intro Text & Features */}
       <section className="huse-section-light">
         <p>
           If your dream is to be an entrepreneur, HUSE Circle is your launchpad.
@@ -173,9 +164,8 @@ useEffect(() => {
           turn into reality, and learning meets real-world action.
         </p>
 
-        {/* Automatic Slide-Up Transition Section */}
+
         <section className="transition-section">
-          {/* First Card Group */}
           <div className={`slide-section ${showSecond ? "hide" : "show"}`}>
             <div className="huse-cards-row">
               <div className="huse-cards">
@@ -195,7 +185,6 @@ useEffect(() => {
             </div>
           </div>
 
-          {/* Second Card Group */}
           <div className={`slide-section ${showSecond ? "show" : "hide"}`}>
             <div className="huse-cards-row">
               <div className="huse-cards">
@@ -217,7 +206,6 @@ useEffect(() => {
         </section>
       </section>
 
-      {/* Section 3 - Why HUSE */}
       <section className="huse-section-dark">
         <h3>
           Why HUSE Circle? – Because Your <br /> Hustle Deserves More
@@ -229,7 +217,7 @@ useEffect(() => {
         </h2>
       </section>
 
-      {/* Section 4 - What makes us different */}
+
       <section className="huse-section-dark" ref={sectionRef}>
   <div className="huse-diff-title">What makes us different</div>
 <div className="huse-divider" ref={dividerRef}></div>
@@ -253,8 +241,6 @@ useEffect(() => {
 </section>
 
 
-
-      {/* Section 5 - Final CTA */}
       <section className="huse-section-final">
         <h2>Join HUSE Circle and turn your passion into profit!</h2>
         <p>
@@ -267,7 +253,6 @@ useEffect(() => {
         <button className="huse-btn">Join HUSE Circle</button>
       </section>
 
-      {/* Section 6 - Testimonials */}
       <section className="huse-testimonials-section">
         <div className="huse-testimonials-title">
           Still thinking? Check out what our community{" "}

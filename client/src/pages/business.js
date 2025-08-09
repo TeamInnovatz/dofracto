@@ -1,18 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './business.css';
 import kadalaiImage from '../assets/kadalai1.png';
 import kadalaiImage2 from '../assets/kadalai2.png';
 import kadalaiImage3 from '../assets/kadalai3.png';
 import kadalaiImage4 from '../assets/kadalai4.png';
-import img from "../assets/logo2.png";
+import img from "../assets/logo2.png"; 
+import img1 from '../assets/businesskadalai1.png';
+import img2 from '../assets/businesskadalai2.png';
+import img3 from '../assets/businesskadalai3.png';
 
 export default function BusinessListing() {
+  const logos = [img1, img2, img3];
+  const [currentLogoIndex, setCurrentLogoIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentLogoIndex(prevIndex => (prevIndex + 1) % logos.length);
+    }, 1000); 
+
+    return () => clearInterval(interval);
+  }, [logos.length]);
+
   return (
     <div className="business-wrapper">
       
-      {/* Entry/Hero Section */}
+      
       <div className="business-hero-entry">
-        {/* Left side content */}
+        
         <div className="business-entry-left">
           <h1 className="hero-title">New age</h1>
           <h2 className="hero-subtitle">Business Ownership</h2>
@@ -21,12 +35,19 @@ export default function BusinessListing() {
             <button className="btn-secondary">Connect with us</button>
           </div>
         </div>
-
-        {/* Right side container — logo removed for now */}
-        <div className="business-entry-logo"></div>
+        
+       
+        <div className="business-entry-logo">
+          <img
+            src={logos[currentLogoIndex]}
+            alt="Animated Business Logo"
+            className="hero-logo-animated"
+          />
+        </div>
+        
       </div>
 
-      {/* Cards Section */}
+      
       <div className="business-cards-container">
 
         <div className="business-card">
@@ -94,7 +115,7 @@ export default function BusinessListing() {
         </div>
       </div>
 
-      {/* Signup Section */}
+     
       <div className="dofracto-signup-container">
         <p className="dofracto-signup-text">
           To access exclusive business opportunities, track your investments, and
