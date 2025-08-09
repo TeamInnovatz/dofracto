@@ -1,4 +1,3 @@
-/* VIDEO TRANSITION */
 .fade-in-video {
   opacity: 1;
   transition: opacity 1s ease-in-out;
@@ -9,7 +8,6 @@
   transition: opacity 1s ease-in-out;
 }
 
-/* CONTAINER */
 .home-container {
   position: relative;
   width: 100%;
@@ -18,7 +16,6 @@
   overflow: hidden;
 }
 
-/* VIDEO STYLING */
 .bg-video {
   position: absolute;
   top: 0;
@@ -29,7 +26,6 @@
   z-index: 1;
 }
 
-/* INTRO */
 .intro-section {
   position: absolute;
   top: 0;
@@ -57,7 +53,6 @@
   opacity: 0;
 }
 
-/* MAIN SECTION */
 .main-section {
   position: relative;
   top: 0;
@@ -75,7 +70,6 @@
   transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
-/* MAIN TITLE */
 .main-title {
   font-size: 100px;
 }
@@ -94,14 +88,12 @@
   cursor: pointer;
 }
 
-/* MAIN FADE OUT */
 .fade-out-main {
   opacity: 0;
   transform: scale(0.98);
   pointer-events: none;
 }
 
-/* SLIDE-UP FEATURES OVERLAY */
 .features-overlay {
   position: absolute;
   top: 100%;
@@ -117,7 +109,19 @@
   animation: slideUpOverlay 1.2s ease forwards;
 }
 
-/* ANIMATIONS */
+.anim-section-enter {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: animEnter 1s ease forwards;
+}
+
+@keyframes animEnter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
