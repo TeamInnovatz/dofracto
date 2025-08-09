@@ -8,7 +8,7 @@ const businesses = [
     image: "https://source.unsplash.com/300x200/?nuts,food",
     fraction: "1/20",
     investmentType: "Equity",
-    payback: "12 months",
+    payback: "12 months"
   },
   {
     name: "RG Tech",
@@ -16,7 +16,7 @@ const businesses = [
     image: "https://source.unsplash.com/300x200/?technology,office",
     fraction: "1/10",
     investmentType: "Revenue Share",
-    payback: "18 months",
+    payback: "18 months"
   },
   {
     name: "Sun Pharma",
@@ -24,7 +24,7 @@ const businesses = [
     image: "https://source.unsplash.com/300x200/?pharmacy,healthcare",
     fraction: "1/5",
     investmentType: "Equity",
-    payback: "24 months",
+    payback: "24 months"
   },
   {
     name: "Zen Wear",
@@ -32,7 +32,7 @@ const businesses = [
     image: "https://source.unsplash.com/300x200/?yoga,clothing",
     fraction: "1/8",
     investmentType: "Equity",
-    payback: "15 months",
+    payback: "15 months"
   },
   {
     name: "FarmFresh",
@@ -40,7 +40,7 @@ const businesses = [
     image: "https://source.unsplash.com/300x200/?organic,vegetables",
     fraction: "1/6",
     investmentType: "Revenue Share",
-    payback: "9 months",
+    payback: "9 months"
   },
   {
     name: "CraftFlow",
@@ -48,14 +48,13 @@ const businesses = [
     image: "https://source.unsplash.com/300x200/?crafts,handmade",
     fraction: "1/12",
     investmentType: "Equity",
-    payback: "14 months",
-  },
+    payback: "14 months"
+  }
 ];
 
 export default function BusinessListing() {
   return (
     <div className="bizapp-container">
-      {/* Hero Section */}
       <section className="biz-hero">
         <div className="biz-hero-content">
           <h1>
@@ -73,14 +72,12 @@ export default function BusinessListing() {
         </div>
       </section>
 
-      {/* Filters */}
       <div className="biz-filters">
         <select><option>Industry</option></select>
         <select><option>Capital Size</option></select>
         <select><option>Investment Type</option></select>
       </div>
 
-      {/* Business Cards */}
       <div className="biz-grid">
         {businesses.map((biz, idx) => (
           <div key={idx} className="biz-card">
@@ -98,6 +95,5 @@ export default function BusinessListing() {
         ))}
       </div>
     </div>
-    
   );
 }

@@ -23,7 +23,9 @@ export default function Dashboard() {
             <button className="df-active">Total Revenue</button>
             <button>Total Profit</button>
           </div>
-          <div className="df-revenue-value">₹50.4K <span className="df-growth">↑ 5% than last month</span></div>
+          <div className="df-revenue-value">
+            ₹50.4K <span className="df-growth">↑ 5% than last month</span>
+          </div>
           <div className="df-bar-chart">
             {["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"].map((month, i) => (
               <div key={i} className="df-bar">

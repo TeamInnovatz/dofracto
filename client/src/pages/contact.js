@@ -9,20 +9,17 @@ function Contact() {
 
   return (
     <div className="contact">
-     
-      
-    
       <div className="contact-container">
         <div className="contact-box">
           <h2 className="heading">Get in touch</h2>
           <p className="subheading">
-            Got questions? Reach out to our team for more information about<br />
+            Got questions? Reach out to our team for more information about
             how DoFracto can transform your investment journey.
           </p>
 
           <div className="content-wrapper">
             <div className="cube-container">
-              <img src={cubeImage} alt="Cubes" className="cube-image" />
+              <img src={cubeImage} alt="3D cube" className="cube-image" />
             </div>
 
             <form className="contact-form" onSubmit={handleSubmit}>
@@ -44,7 +41,7 @@ function Contact() {
                 pattern="[0-9]{10}"
                 title="Please enter a valid phone number"
               />
-              <textarea placeholder="Your Message" rows="4.5"></textarea>
+              <textarea placeholder="Your Message" rows="4"></textarea>
               <button type="submit">Send Message</button>
             </form>
           </div>

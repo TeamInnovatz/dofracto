@@ -4,7 +4,7 @@ import kadalaiImage from '../assets/kadalai1.png';
 import kadalaiImage2 from '../assets/kadalai2.png';
 import kadalaiImage3 from '../assets/kadalai3.png';
 import kadalaiImage4 from '../assets/kadalai4.png';
-import img from "../assets/logo2.png"; 
+import img from '../assets/logo2.png';
 import img1 from '../assets/businesskadalai1.png';
 import img2 from '../assets/businesskadalai2.png';
 import img3 from '../assets/businesskadalai3.png';
@@ -16,17 +16,13 @@ export default function BusinessListing() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentLogoIndex(prevIndex => (prevIndex + 1) % logos.length);
-    }, 1000); 
-
+    }, 1000);
     return () => clearInterval(interval);
   }, [logos.length]);
 
   return (
     <div className="business-wrapper">
-      
-      
       <div className="business-hero-entry">
-        
         <div className="business-entry-left">
           <h1 className="hero-title">New age</h1>
           <h2 className="hero-subtitle">Business Ownership</h2>
@@ -35,8 +31,6 @@ export default function BusinessListing() {
             <button className="btn-secondary">Connect with us</button>
           </div>
         </div>
-        
-       
         <div className="business-entry-logo">
           <img
             src={logos[currentLogoIndex]}
@@ -44,12 +38,9 @@ export default function BusinessListing() {
             className="hero-logo-animated"
           />
         </div>
-        
       </div>
 
-      
       <div className="business-cards-container">
-
         <div className="business-card">
           <img src={kadalaiImage} alt="Mr.Kadalai" />
           <div className="card-content">
@@ -115,21 +106,14 @@ export default function BusinessListing() {
         </div>
       </div>
 
-     
       <div className="dofracto-signup-container">
         <p className="dofracto-signup-text">
-          To access exclusive business opportunities, track your investments, and
-          connect with a dynamic entrepreneurial community. Join now to explore
-          more and grow!
+          To access exclusive business opportunities, track your investments, and connect with a dynamic entrepreneurial community. Join now to explore more and grow!
         </p>
-
         <div className="dofracto-signup-logo-wrapper">
           <img src={img} alt="Dofracto Logo" className="dofracto-signup-logo" />
         </div>
-
-        <button className="dofracto-signup-button">
-          Sign Up to Continue
-        </button>
+        <button className="dofracto-signup-button">Sign Up to Continue</button>
       </div>
     </div>
   );
