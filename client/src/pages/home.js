@@ -5,7 +5,8 @@ import Features from "./features";
 import Listings from "./listings";
 import Intro from "./intro";
 import Vision from "./VisionAndMission";
-
+import Partner from "./partner";
+import Faq from "./faq";
 export default function Home() {
   const [step, setStep] = useState(0);
   const [mainSectionStep, setMainSectionStep] = useState(0);
@@ -26,6 +27,8 @@ export default function Home() {
       setTimeout(() => setMainSectionStep(1), 17000),
       setTimeout(() => setMainSectionStep(2), 25000),
       setTimeout(() => setMainSectionStep(3), 30000),
+      setTimeout(() => setMainSectionStep(4), 35000),
+      setTimeout(() => setMainSectionStep(5), 40000),
     ];
 
     return () => timers.forEach(clearTimeout);
@@ -86,6 +89,22 @@ export default function Home() {
           style={{ width: "100vw", height: "100vh", position: "absolute", top: 0, left: 0, zIndex: 10 }}
         >
           <Vision />
+        </div>
+      )}
+      {mainSectionStep === 4 && (
+        <div
+          className="anim-section-enter"
+          style={{ width: "100vw", height: "100vh", position: "absolute", top: 0, left: 0, zIndex: 10 }}
+        >
+          <Partner />
+        </div>
+      )}
+      {mainSectionStep === 5 && (
+        <div
+          className="anim-section-enter"
+          style={{ width: "100vw", height: "100vh", position: "absolute", top: 0, left: 0, zIndex: 10 }}
+        >
+          <Faq />
         </div>
       )}
     </div>
