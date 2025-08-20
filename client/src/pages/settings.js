@@ -1,8 +1,7 @@
                                                                                                                                                                                                                                                                         
 import React, { useRef, useState } from "react";
-import "./settings.css"; // Import the CSS file
+import "./settings.css"; 
 
-// SVG icons for sidebar
 const AccountIcon = ({ active }) => (
   <span className="icon" style={{ color: active ? "#232323" : "#fff" }}>&#128100;</span>
 );
@@ -22,7 +21,7 @@ export default function SettingsPage() {
   const [avatar, setAvatar] = useState(defaultAvatar);
   const uploadRef = useRef();
 
-  // Demo data
+  
   const profile = {
     firstName: "Rajesh",
     lastName: "Kumar",
@@ -30,7 +29,7 @@ export default function SettingsPage() {
     email: "rajesh123@gmail.com",
   };
 
-  // Handlers
+  
   const handleAvatarUpload = (e) => {
     if (e.target.files && e.target.files[0]) {
       const reader = new window.FileReader();
@@ -40,8 +39,7 @@ export default function SettingsPage() {
   };
   const handleDeleteAvatar = () => setAvatar(defaultAvatar);
 
-  // Panel content
-  let mainContent;
+    let mainContent;
   if (panel === panels.account) {
     mainContent = (
       <>
@@ -221,9 +219,7 @@ export default function SettingsPage() {
       </div>
     </div>
   );
-}
-
-// Toggle switch for notification preferences
+} 
 function ToggleSwitch({ defaultChecked }) {
   const [on, setOn] = useState(defaultChecked);
   return (
@@ -235,8 +231,7 @@ function ToggleSwitch({ defaultChecked }) {
     </label>
   );
 }
-
-// Toggle switch row for privacy panel (unchanged)
+ 
 function ToggleRow({ label }) {
   const [on, setOn] = useState(true);
   return (

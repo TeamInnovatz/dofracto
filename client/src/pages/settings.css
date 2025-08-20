@@ -153,7 +153,7 @@
 .save-btn:hover {
   background: #f0e68c;
 }
-/* Account Panel */
+ 
 .profile-row {
   display: flex;
   align-items: center;
@@ -269,7 +269,7 @@
   margin: 36px 0 24px 0;
   opacity: 0.5;
 }
-/* Privacy Panel */
+ 
 .section-title {
   font-size: 1.17em;
   font-weight: 600;
@@ -347,7 +347,7 @@ input:checked + .slider:before {
 input:checked + .slider .toggle-label {
   color: #232323;
 }
-/* --- Additional CSS for Privacy Panel --- */
+ 
 .privacy-row {
   display: flex;
   align-items: center;

@@ -35,7 +35,7 @@
   animation-delay: 1.2s;
 }
 
-/* Animations */
+
 @keyframes slideInLeft {
   to {
     opacity: 1;

@@ -1,4 +1,4 @@
-/* Main Container */
+ 
 .purchase-bg {
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@
   letter-spacing: 0.2px;
 }
 
-/* Form Layout */
+ 
 .purchase-form {
   width: 100vw;
   max-width: 1200px;
@@ -56,7 +56,6 @@
   min-width: 340px;
 }
 
-/* Inputs and Select */
 .input-label {
   font-size: 1.04rem;
   margin-bottom: 10px;
@@ -89,7 +88,7 @@
   font-size: 1.23rem;
 }
 
-/* Message Box */
+ 
 .message-section {
   width: 100vw;
   max-width: 1200px;
@@ -118,7 +117,6 @@
   font-weight: bold;
 }
 
-/* Responsive */
 @media (max-width: 1000px) {
   .purchase-form,
   .message-section,
